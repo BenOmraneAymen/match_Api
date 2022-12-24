@@ -3,16 +3,16 @@ const { DataTypes} = require('sequelize')
 
 module.exports = (sequelize)=>{
     sequelize.define('game', {
-        game_id: {
+        id: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
             primaryKey: true
         },
-        score_Team_1: {
+        score_team_1: {
             type: DataTypes.INTEGER,
             allowNull: false,
         },
-        score_Team_2: {
+        score_team_2: {
             type: DataTypes.INTEGER,
             allowNull: false,
         },

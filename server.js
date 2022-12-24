@@ -19,4 +19,4 @@ sequelize.authenticate().then(
 
 
 
-app.listen(3000, () => {console.log("server runing on port 3000 ....")})
+app.listen(8082, '0.0.0.0', () => {console.log("server running on port 8082 ....")})
