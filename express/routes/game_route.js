@@ -7,6 +7,9 @@ router.get("/game",async (req,res)=>{
         res.send(games)
     }catch(err){
         console.log(err)
+        res.send({
+            status:500,
+        });
     }
 });
 
@@ -16,6 +19,9 @@ router.get('/game/:id',async (req,res)=>{
             res.send(game)
         } catch(err){
             console.log(err)
+            res.send({
+                status:500,
+            });
         }
 });
 
@@ -28,6 +34,9 @@ router.post('/game',async (req,res)=>{
         });
     } catch(err){
         console.log(err);
+        res.send({
+            status:500,
+        });
     }
 })
 
@@ -46,6 +55,9 @@ router.put('/game/:id',async (req,res)=>{
         });
     } catch(err){
         console.log(err);
+        res.send({
+            status:500,
+        });
     }
     }
 )
@@ -59,6 +71,9 @@ router.delete('/game/:id',async (req,res)=>{
         });
     } catch(err){
         console.log(err);
+        res.send({
+            status:500,
+        });
     }
 }
 )

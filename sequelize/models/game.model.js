@@ -19,7 +19,9 @@ module.exports = (sequelize)=>{
         starts_at:{
             type:DataTypes.DATE,
             allowNull:false,
-        }
+        },
+        createdAt: { type: DataTypes.DATE, field: 'created_at' },
+        updatedAt: { type: DataTypes.DATE, field: 'updated_at' },
     });
     console.log('game model loaded');
 };

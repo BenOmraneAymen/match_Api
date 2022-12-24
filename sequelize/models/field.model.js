@@ -26,7 +26,9 @@ module.exports = (sequelize)=>{
         size:{
             type:DataTypes.INTEGER,
             allowNull:false,
-        }
+        },
+        createdAt: { type: DataTypes.DATE, field: 'created_at' },
+        updatedAt: { type: DataTypes.DATE, field: 'updated_at' },
     });
     console.log('field model loaded');
 }

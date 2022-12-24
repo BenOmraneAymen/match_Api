@@ -9,7 +9,10 @@ router.get("/team", async (req, res) => {
     }
     catch (err) {
         console.log(err);
-        res.send({status:500})
+        res.send({
+            status:500,
+            erreur:err
+        })
     }
 }
 );
@@ -23,7 +26,10 @@ router.post("/team", async (req, res) => {
         });
     } catch(err){
         console.log(err);
-        res.send({status:500})
+        res.send({
+            status:500,
+            erreur:err
+        })
     }
 }
 );

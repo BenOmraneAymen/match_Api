@@ -1,9 +1,9 @@
 const { Sequelize } = require('sequelize');
 const { applyExtraSetup } = require('./extra-setup');
 
-const sequelize = new Sequelize('sports','root','root', {
+const sequelize = new Sequelize('test','admin','Admin_123', {
     dialect: 'mysql',
-    host: 'db',
+    host: 'localhost',
 	port: 3306
 })
 

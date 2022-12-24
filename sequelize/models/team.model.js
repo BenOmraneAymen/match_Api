@@ -22,7 +22,9 @@ module.exports = (sequelize)=>{
         flag:{
             type:DataTypes.STRING,
             allowNull:false,
-        }
+        },
+        createdAt: { type: DataTypes.DATE, field: 'created_at' },
+        updatedAt: { type: DataTypes.DATE, field: 'updated_at' },
     });
     console.log('team model loaded');
 }

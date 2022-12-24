@@ -10,9 +10,9 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use(bodyParser.json());
 
-app.use(fieldRoute);
-app.use(sportRoute);
-app.use(teamRoute);
-app.use(gameRoute);
+app.use("/api",fieldRoute);
+app.use("/api",sportRoute);
+app.use("/api",teamRoute);
+app.use("/api",gameRoute);
 
 module.exports = app;
